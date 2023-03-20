@@ -1,0 +1,191 @@
+/*
+	Author : Sophie FERRARI
+	Vesion : 1.0.0
+	Date : 12/06/2021
+*/
+/*---------------------------------------------------------------*/
+/* GLOBAL */
+/*---------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+html, body{
+	margin: 0;
+}  
+
+h2, h3{
+		color:#8e8e8e;
+		font-family: 'Lato', sans-serif;
+}
+
+
+h1{
+	position: absolute;
+	color:#ffffff;
+	font-family: 'Lato', sans-serif;
+	font-size: 2rem;
+	margin-top: 102px;
+}
+path{
+	color : #e87200;
+}
+.games-name{
+	margin-top: 30px;
+} 
+
+.btn-outline{
+	color: #8e8e8e;
+}
+.score{
+	font-size: 40px;
+	color:#8e8e8e;
+}
+.current-score-1,
+.current-score-2{
+	font-size: 20px;
+} 
+.globalScore1,
+.globalScore2{
+	font-size: 30px;
+}
+
+.current{
+	border-radius: 15px;
+}
+.player-one,
+.player-two{
+	border-radius: 30px;
+	border: 5px solid #e87200;
+	max-width: 16rem;
+	
+}
+
+#newparty :hover,
+#hold :hover,
+#roll :hover{
+	color: #e87200;
+	
+}
+.actif{
+	border-radius: 30px;
+	background-color: #d0d0ce;
+
+}
+
+
+/*---------------------------------------------------------------*/
+/* CONTENT */
+/* Mobile view */
+/*---------------------------------------------------------------*/
+body{
+	   background: url(../images/fond-jeux-mobil.jpg) no-repeat fixed center center;
+	   background-size: cover;     
+  }
+  .row{
+  	margin: 0;
+	padding-left: 16px;
+}
+  .first-caracter{
+	position: absolute;
+	z-index: 3;
+	margin: 146px 0 0 -119px;
+
+  }
+  .second-caracter{
+	position: absolute;
+	z-index: 4;
+	margin: -189px 0 0 156px;
+  }
+
+  .player2{
+	margin-left: 80px;
+  }
+  .player1{
+	margin-left: 86px;
+  }
+  .games{
+	background-color: #ffffff;
+	border-radius: 25px;	
+  }
+  #roll{
+	width: max-content;
+	padding: 10px 0px 0 0;
+  }
+  #roll-dice{
+	margin-top: 20px;
+    margin-left: 30px;
+  }
+
+/*---------------------------------------------------------------*/
+/* Tablette view */
+/*---------------------------------------------------------------*/
+ @media (min-width: 768px){ 
+
+   body{
+	   background: url(../images/fond-jeux.jpg) no-repeat fixed center center;
+	   background-size: cover;       
+   }
+   main{
+  		margin : 0 80px 0 126px;
+  	}
+  	.row{
+	padding-left: 18px;
+    }
+  	.first-caracter{
+
+
+
+
+
+  		
+  		margin: 166px 0 0 -115px;
+  	}
+  	.second-caracter{
+  		margin: -167px 0 0 150px
+  	}
+  	.games{
+  		padding-top: 40px;
+  	}
+  	.player1{
+	    margin-left: 80px;
+    }
+  	.player2{
+  		margin: 0 81px 0 0;
+  	}
+  	.btn-outline{
+    	padding: 10px 0 10px 0; 
+    }
+    #roll-dice{
+	margin-top: 20px;
+    margin-left: 0px;
+    }
+ }
+
+
+/*---------------------------------------------------------------*/
+/*  Desktop view */
+/*----------------  -----------------------------------------------*/
+  @media (min-width: 992px){
+
+  	.row{
+	padding-left: 8px;
+    }
+  	.player1{
+	    margin-left: 239px;
+    }
+  	.player2{
+  		margin: 0 227px 0 0;
+  	}
+  	.first-button{
+  		padding: 0 0 0 60px;
+  	}
+  	.second-button{
+  		padding: 0 0 0 60px;
+  	}
+  	
+  	#roll{
+  		padding: 0;
+  	}
+		.resultdice{
+			padding-bottom: 30px;
+		}
+
+ 	}
