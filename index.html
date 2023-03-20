@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	 <head>
+        <title>Dice game</title>
+
+        <meta charset="utf-8">
+        <meta name="Dice Games" content="jeux qui permet de collecter des points">
+        <meta name="robots" content="noindex,nofollow">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        
+
+        <link rel="shortcut icon" type="images/x-icon" href="images/favicon.ico">
+   </head>
+
+   
+
+ <body class="container-fluid">
+
+    <header class="games-name row justify-content-center" >        
+        <h1>Dice Games</h1>
+          <img src="images/bulle.png" alt="image du titre">          
+   </header>
+
+  <main class="row justify-content-between">
+
+<!-- Le premier joueur -->
+
+    <div class="player1 p-0 actif"> 
+
+      <img class="first-caracter img-fluid" src="images/player-one.png" alt="Personnage Premier player">
+
+        <div class="card player-one col-md-5 ">
+          <div class="card-body-1 text-center actif">
+            <h2 class=" card-title-1 pb-5">Player 1</h2>
+            <div class="card-text">
+              <h3>Your Score</h3>
+                <p class="globalScore1 pb-4">0</p>
+                <div class="current bg-secondary text-white rounded-3 py-2">
+                  <p class="px-2">your current Score</p>
+                    <p class="current-score-1">0</p>
+                  </div>
+              </div>
+            </div>          
+          </div>
+        </div>
+
+ <!-- les boutons -->  
+
+    <div class="games row col-md-2 my-3 ">
+
+         <div class="first-button text-center">              
+           <div id="newparty">
+               <button type="button" class="btn btn-outline ">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-align-middle" viewBox="0 0 16 16">
+              <path d="M6 13a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v10zM1 8a.5.5 0 0 0 .5.5H6v-1H1.5A.5.5 0 0 0 1 8zm14 0a.5.5 0 0 1-.5.5H10v-1h4.5a.5.5 0 0 1 .5.5z"/>
+              </svg>New Party</button>
+            </div>
+
+           <div id="hold">
+              <button type="button" class="btn btn-outline ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-align-middle" viewBox="0 0 16 16">
+              <path d="M6 13a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v10zM1 8a.5.5 0 0 0 .5.5H6v-1H1.5A.5.5 0 0 0 1 8zm14 0a.5.5 0 0 1-.5.5H10v-1h4.5a.5.5 0 0 1 .5.5z"/>
+              </svg>Hold</button>
+           </div>
+         </div>
+
+
+        <div class="second-button text-center ">
+
+           <div id="resultdice"></div>
+
+           <div id="roll-dice">            
+              <button type="button" class="roll btn btn-outline ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-align-middle" viewBox="0 0 16 16">
+              <path d="M6 13a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v10zM1 8a.5.5 0 0 0 .5.5H6v-1H1.5A.5.5 0 0 0 1 8zm14 0a.5.5 0 0 1-.5.5H10v-1h4.5a.5.5 0 0 1 .5.5z"/>
+              </svg>Roll Dice</button>
+           </div>         
+        </div>
+      </div>
+
+<!-- Le second joueur -->
+
+
+    <div class="player2 py-0">         
+ 
+       <div class="card player-two col-md-5">
+          <div class="card-body-2 text-center ">
+            <h2 class=" card-title-2 pb-5">Player 2</h2>
+            <div class="card-text">
+              <h3>Your Score</h3>
+                <p class="globalScore2 pb-4">0</p>
+                <div class="current bg-secondary text-white rounded-3 py-2">
+                  <p class="px-2">your current Score</p>
+                    <p class="current-score-2">0</p>
+                  </div>
+              </div>
+            </div>
+        </div> 
+
+            <img class="second-caracter img-fluid" src="images/player-two.png" alt="Personnage Premier player"> 
+
+    </div>  
+  </main>
+          <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script> 
+         <script src="js/script.js"></script>    
+   </body>
+ </html>
+
